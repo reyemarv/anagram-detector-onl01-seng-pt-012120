@@ -9,8 +9,7 @@ class Anagram
   end 
   
   def match(anagrams)
-    letters = @word.split(" ")
-    some_words = %w(anagrams).each_with_index do {|i| i.split.sort}
-     
+   anagrams.each {|items| items.split(" ") == @word.split(" ") ? 
+    anagram_list << items : anagram_list}
   end 
 end 
