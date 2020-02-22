@@ -1,1 +1,15 @@
-# Your code goes here!
+class Anagram
+  
+  attr_accessor :word
+  
+  anagram_list = []
+  
+  def initialize(word)
+    @word = word
+  end 
+  
+  def match(anagrams)
+    some_words = %w(anagrams).each_with_index do {|i| i.split.sort
+    some_words
+  end 
+end 
