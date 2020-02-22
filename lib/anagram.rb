@@ -10,7 +10,6 @@ class Anagram
     anagram_list = []
    anagrams.each{ |items| 
    if items.split("").sort == @word.split("").sort
-    anagram_list << items
-   else anagram_list}
+    anagram_list << items}
   end 
 end 
