@@ -11,5 +11,6 @@ class Anagram
   def match(anagrams)
    anagrams.each {|items| items.split(" ") == @word.split(" ") ? 
     anagram_list << items : anagram_list}
+    anagram_list
   end 
 end 
