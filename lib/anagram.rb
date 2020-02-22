@@ -8,8 +8,11 @@ class Anagram
   
   def match(anagrams)
     anagram_list = []
-   anagrams.each {|items| items.split(" ").sort == @word.split(" ").sort
-    anagram_list << items}
-    anagram_list
+   anagrams.each do |items|
+     if items.split(" ").sort == @word.split(" ").sort 
+    anagram_list << items
   end 
+end 
+anagram_list 
+end 
 end 
